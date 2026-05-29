@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Albert Cyriac | Data Science, ML & AI Portfolio</title>
+    <meta name="description" content="Professional portfolio of Albert Cyriac, an MCA student with a mathematics background, specializing in Data Science, Machine Learning, and AI. Built projects with Scikit-Learn, Gemini 2.0, Django, and React.">
+    <meta name="keywords" content="Albert Cyriac, Data Science, Machine Learning, AI, MCA, Mathematics, Portfolio, Django, React, Scikit-Learn, Kerala, India">
+    <meta name="author" content="Albert Cyriac">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Albert Cyriac | Data Science, ML & AI Portfolio">
+    <meta property="og:description" content="Final-year MCA student & Math graduate specializing in ML/AI models, optimization algorithms, and full-stack web applications.">
+    <meta property="og:image" content="https://github.com/albertcyriac04-lgtm.png"> <!-- Fallback to github avatar -->
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Interactive Background Canvas -->
+    <canvas id="neural-canvas"></canvas>
+
+    <!-- Header / Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#hero" class="logo">
+                <span class="logo-accent">AC.</span><span class="logo-text">dev</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#playground" class="nav-link">Playground</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link nav-btn">Get In Touch</a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="status-badge" id="internship-status">
+                        <span class="pulse-dot"></span>
+                        <span class="status-text">Seeking Internship: Oct 2026 – Mar 2027</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Albert Cyriac
+                    </h1>
+                    
+                    <h2 class="hero-subtitle">
+                        <span class="static-txt">I specialize in</span>
+                        <span class="dynamic-txt" id="typing-text"></span>
+                    </h2>
+                    
+                    <p class="hero-description">
+                        A final-year MCA student and Mathematics graduate bridge-building the gap between <strong>rigorous mathematical thinking</strong> and <strong>cutting-edge AI/ML development</strong>. Skilled in designing smart algorithms, full-stack applications, and data-driven solutions.
+                    </p>
+                    
+                    <div class="hero-ctas">
+                        <a href="#playground" class="btn btn-primary">Try the Sandbox</a>
+                        <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/albertcyriac04-lgtm" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/albert-cyriac" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:albertcyriac04@gmail.com" class="social-icon" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        </a>
+                        <a href="tel:+919497529476" class="social-icon" aria-label="Phone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Profile Card Graphic -->
+                <div class="hero-graphic">
+                    <div class="math-card glass">
+                        <div class="card-glow"></div>
+                        <div class="math-card-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="card-title">optimizer_profile.py</span>
+                        </div>
+                        <div class="math-card-body">
+                            <pre><code class="language-python"><span class="keyword">import</span> numpy <span class="keyword">as</span> np
+<span class="keyword">from</span> scipy.optimize <span class="keyword">import</span> minimize
+
+<span class="comment"># Modeling the Ideal Internship Fit</span>
+candidate_profile = {
+    <span class="string">"name"</span>: <span class="string">"Albert Cyriac"</span>,
+    <span class="string">"foundations"</span>: [<span class="string">"Mathematics"</span>, <span class="string">"Algorithms"</span>],
+    <span class="string">"ml_skills"</span>: [<span class="string">"Scikit-Learn"</span>, <span class="string">"Gemini API"</span>, <span class="string">"Pandas"</span>],
+    <span class="string">"web_skills"</span>: [<span class="string">"Django 5"</span>, <span class="string">"React"</span>, <span class="string">"MySQL"</span>],
+    <span class="string">"availability"</span>: <span class="string">"Oct 2026 - Mar 2027"</span>
+}
+
+<span class="keyword">def</span> <span class="func">objective_function</span>(internship):
+    analytical_impact = internship.data_complexity * <span class="number">1.5</span>
+    system_impact = internship.scale * <span class="number">1.2</span>
+    return -(analytical_impact + system_impact)
+
+print(<span class="string">"Ready to optimize real-world systems!"</span>)</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-down-indicator" aria-label="Scroll down">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-fade">
+            <div class="container">
+                <h2 class="section-title">Bridging Math & Machine Learning</h2>
+                
+                <div class="about-grid">
+                    <div class="about-text glass">
+                        <h3>My Story</h3>
+                        <p>
+                            I hold a <strong>Bachelor of Science in Mathematics</strong>, which taught me to think rigorously, structured my problem-solving skills, and gave me a deep appreciation for the underlying formulas of computer algorithms. 
+                        </p>
+                        <p>
+                            Transitioning to my <strong>Master of Computer Applications (MCA)</strong>, I channeled this analytical foundation into building software, modeling data, and designing machine learning solutions. I love taking complex business or logical requirements and translating them into robust, clean code databases, efficient optimization routes, or predictive models.
+                        </p>
+                        
+                        <div class="highlight-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="highlight-icon"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg>
+                            <div class="highlight-text">
+                                <strong>Availability:</strong> I am seeking a 6-month Data Science, Machine Learning, or AI engineering internship from <strong>October 2026 to March 2027</strong>. Open to both remote and on-site opportunities across India or internationally.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats-grid">
+                        <div class="stat-card glass">
+                            <span class="stat-number">BSc</span>
+                            <span class="stat-label">Mathematics Graduate</span>
+                            <span class="stat-desc">Rooted in Linear Algebra, Calculus, Statistics, & Operations Research</span>
+                        </div>
+                        <div class="stat-card glass">
+                            <span class="stat-number">MCA</span>
+                            <span class="stat-label">Final Year Student</span>
+                            <span class="stat-desc">Advanced algorithms, full-stack systems, & software development</span>
+                        </div>
+                        <div class="stat-card glass flex-wide">
+                            <span class="stat-number">AI+ML</span>
+                            <span class="stat-label">Applied Integration</span>
+                            <span class="stat-desc">Developed production integrations using Gemini 2.0 and custom regression pipelines with Scikit-Learn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-fade">
+            <div class="container">
+                <h2 class="section-title">Technical Skillset</h2>
+                <p class="section-subtitle">A curated collection of languages, frameworks, and tools I use to bring ideas to life.</p>
+                
+                <div class="skills-grid">
+                    <!-- ML & AI -->
+                    <div class="skill-category-card glass">
+                        <div class="skill-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                            <h3>ML & AI</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Scikit-Learn</span> <span class="skill-badge">Regression & Classification</span></li>
+                            <li><span class="skill-name">Gemini API</span> <span class="skill-badge">GenAI & LLM Integration</span></li>
+                            <li><span class="skill-name">ML Fundamentals</span> <span class="skill-badge">Model Evaluation</span></li>
+                            <li><span class="skill-name">Neural Networks</span> <span class="skill-badge">CNNs (Image Classification)</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="skill-category-card glass">
+                        <div class="skill-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                            <h3>Web Development</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Django 5.0</span> <span class="skill-badge">Robust MVC & REST Backend</span></li>
+                            <li><span class="skill-name">React.js & Vite</span> <span class="skill-badge">Component UI Architecture</span></li>
+                            <li><span class="skill-name">Tailwind CSS</span> <span class="skill-badge">Utility-First Responsive UI</span></li>
+                            <li><span class="skill-name">HTML5 & CSS3</span> <span class="skill-badge">Modern semantic designs</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="skill-category-card glass">
+                        <div class="skill-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><code class="fira-icon">&lt;/&gt;</code></svg>
+                            <h3>Languages</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Python</span> <span class="skill-badge">Data Science & Backend</span></li>
+                            <li><span class="skill-name">JavaScript</span> <span class="skill-badge">Frontend Interactivity</span></li>
+                            <li><span class="skill-name">Java</span> <span class="skill-badge">Object-Oriented Programming</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-category-card glass">
+                        <div class="skill-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                            <h3>Databases</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">MySQL</span> <span class="skill-badge">Relational Schemas</span></li>
+                            <li><span class="skill-name">PostgreSQL</span> <span class="skill-badge">Enterprise ACID Transactions</span></li>
+                            <li><span class="skill-name">MongoDB</span> <span class="skill-badge">NoSQL Document Store</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Science Tools -->
+                    <div class="skill-category-card glass">
+                        <div class="skill-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
+                            <h3>Data & Libraries</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Pandas</span> <span class="skill-badge">DataFrame Wrangling</span></li>
+                            <li><span class="skill-name">NumPy</span> <span class="skill-badge">Scientific Vector Comp.</span></li>
+                            <li><span class="skill-name">Jupyter Notebooks</span> <span class="skill-badge">Exploratory Data Analysis</span></li>
+                            <li><span class="skill-name">OpenPyXL & ReportLab</span> <span class="skill-badge">Auto Reporting</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Dev Tools -->
+                    <div class="skill-category-card glass">
+                        <div class="skill-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" x2="12" y1="22.08" y2="12"></line></svg>
+                            <h3>Tools & OS</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Git & GitHub</span> <span class="skill-badge">Version Control / PRs</span></li>
+                            <li><span class="skill-name">VS Code</span> <span class="skill-badge">Integrated Dev Environment</span></li>
+                            <li><span class="skill-name">Linux / Ubuntu</span> <span class="skill-badge">CLI Shell Scripting</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sandbox Playground -->
+        <section id="playground" class="playground-section scroll-fade">
+            <div class="container">
+                <h2 class="section-title">Math & ML Interactive Playground</h2>
+                <p class="section-subtitle">Test my theoretical skills with interactive simulations built directly in the browser.</p>
+                
+                <div class="playground-wrapper glass">
+                    <!-- Tab Navigation -->
+                    <div class="playground-tabs">
+                        <button class="tab-btn active" data-tab="crop-tab">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 5-2H7a7 7 0 0 0 5 2Z"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2A15.3 15.3 0 0 1 12 2Z"></path><path d="M12 14v4"></path><path d="M16 14v2"></path><path d="M8 14v2"></path></svg>
+                            ML Crop Recommender
+                        </button>
+                        <button class="tab-btn" data-tab="tsp-tab">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><circle cx="6" cy="19" r="3"></circle><circle cx="18" cy="19" r="3"></circle><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="5" r="3"></circle><path d="M9 19h6"></path><path d="m18 8-6 11"></path><path d="M18 16V8"></path><path d="M6 8v8"></path><path d="m6 8 6 11"></path></svg>
+                            Operations Research TSP Solver
+                        </button>
+                    </div>
+
+                    <!-- Playground Content Panels -->
+                    <div class="playground-content">
+                        <!-- Tab 1: ML Crop Recommender -->
+                        <div class="tab-panel active" id="crop-tab">
+                            <div class="crop-grid">
+                                <div class="crop-inputs">
+                                    <h3>Adjust Soil & Climate Sliders</h3>
+                                    <p class="panel-desc">Simulating ML classification using dynamic Euclidean distance calculations against standard optimal crop centroids.</p>
+                                    
+                                    <div class="slider-group">
+                                        <div class="slider-info">
+                                            <label for="nitrogen">Nitrogen (N) - Soil Nutrient</label>
+                                            <span class="slider-value" id="val-nitrogen">50 mg/kg</span>
+                                        </div>
+                                        <input type="range" id="nitrogen" min="0" max="140" value="50" class="playground-slider">
+                                    </div>
+
+                                    <div class="slider-group">
+                                        <div class="slider-info">
+                                            <label for="phosphorus">Phosphorus (P) - Soil Nutrient</label>
+                                            <span class="slider-value" id="val-phosphorus">45 mg/kg</span>
+                                        </div>
+                                        <input type="range" id="phosphorus" min="5" max="145" value="45" class="playground-slider">
+                                    </div>
+
+                                    <div class="slider-group">
+                                        <div class="slider-info">
+                                            <label for="potassium">Potassium (K) - Soil Nutrient</label>
+                                            <span class="slider-value" id="val-potassium">50 mg/kg</span>
+                                        </div>
+                                        <input type="range" id="potassium" min="5" max="205" value="50" class="playground-slider">
+                                    </div>
+
+                                    <div class="slider-group">
+                                        <div class="slider-info">
+                                            <label for="temperature">Temperature (°C)</label>
+                                            <span class="slider-value" id="val-temperature">28 °C</span>
+                                        </div>
+                                        <input type="range" id="temperature" min="8" max="45" value="28" class="playground-slider">
+                                    </div>
+
+                                    <div class="slider-group">
+                                        <div class="slider-info">
+                                            <label for="rainfall">Annual Rainfall (mm)</label>
+                                            <span class="slider-value" id="val-rainfall">1200 mm</span>
+                                        </div>
+                                        <input type="range" id="rainfall" min="200" max="3000" value="1200" class="playground-slider">
+                                    </div>
+                                </div>
+                                
+                                <div class="crop-output-card glass">
+                                    <h3>Recommendation Engine</h3>
+                                    <div class="crop-result-visualization">
+                                        <div class="crop-icon-wrapper" id="crop-icon">🌾</div>
+                                        <div class="crop-name" id="crop-name">Rice</div>
+                                        <div class="crop-confidence">
+                                            <span>Confidence Match</span>
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar-fill" id="crop-confidence-fill" style="width: 87%;"></div>
+                                            </div>
+                                            <span class="confidence-text" id="crop-confidence-val">87% Match</span>
+                                        </div>
+                                    </div>
+                                    <div class="crop-description" id="crop-desc">
+                                        Rice requires high humidity, consistent temperatures, and extensive water levels (high rainfall). Your current input parameters match the baseline prototype characteristics of healthy paddy cultivation.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 2: TSP Route Solver -->
+                        <div class="tab-panel" id="tsp-tab">
+                            <div class="tsp-grid">
+                                <div class="tsp-canvas-container">
+                                    <div class="canvas-help-text">Drag town pins to adjust spatial layout and distances!</div>
+                                    <div id="tsp-map-wrapper">
+                                        <svg id="tsp-svg" viewBox="0 0 500 400" width="100%" height="100%">
+                                            <!-- Paths will be drawn here dynamically -->
+                                            <g id="paths-group"></g>
+                                            <g id="shortest-path-group"></g>
+                                            <!-- Nodes will be drawn here dynamically -->
+                                            <g id="nodes-group"></g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="tsp-controls-card glass">
+                                    <h3>Exhaustive Enumeration (5 Nodes)</h3>
+                                    <p class="panel-desc">Calculates all 5! = 120 paths (cyclic: 12 permutations start-independent) to visually guarantee the absolute shortest Hamiltonian path.</p>
+                                    
+                                    <div class="tsp-actions">
+                                        <button class="btn btn-primary" id="btn-run-tsp">Solve Route</button>
+                                        <button class="btn btn-secondary" id="btn-reset-tsp">Reset Positions</button>
+                                    </div>
+
+                                    <div class="solver-stats">
+                                        <div class="stat-line">
+                                            <span>Permutations Scanned:</span>
+                                            <strong id="permutations-scanned">0 / 24</strong>
+                                        </div>
+                                        <div class="stat-line">
+                                            <span>Best Path Distance:</span>
+                                            <strong id="best-distance">- km</strong>
+                                        </div>
+                                        <div class="stat-line path-sequence">
+                                            <span>Optimal Order:</span>
+                                            <div class="path-steps" id="optimal-path-sequence">
+                                                Click "Solve Route"
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="distance-matrix-wrapper">
+                                        <h4>Distance Matrix (px)</h4>
+                                        <table class="distance-table" id="dist-matrix-table">
+                                            <!-- Generated dynamically -->
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-fade">
+            <div class="container">
+                <h2 class="section-title">Core Projects</h2>
+                <p class="section-subtitle">Real-world applications putting mathematical logic and machine learning to test.</p>
+                
+                <div class="projects-container">
+                    <!-- Project 1: NutriDiet -->
+                    <div class="project-card glass">
+                        <div class="project-image-placeholder">
+                            <div class="project-illustration diet-illustration">
+                                <span class="illus-emoji">🍎</span>
+                                <div class="floating-circle c1"></div>
+                                <div class="floating-circle c2"></div>
+                                <div class="floating-circle c3"></div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">Django 5.0</span>
+                                <span class="tag">React + Vite</span>
+                                <span class="tag">Scikit-Learn</span>
+                                <span class="tag">Gemini API</span>
+                            </div>
+                            <h3>NutriDiet — AI Nutrition & Diet Management System</h3>
+                            <p class="project-intro">A full-stack, enterprise-grade application generating personalized meal plans and clinical tracking reports using LLMs and classic ML regressors.</p>
+                            
+                            <ul class="project-highlights">
+                                <li><strong>AI Diet Integration:</strong> Structured system calls to <strong>Google Gemini 2.0 Flash</strong> API generating custom meal recipes based on user allergies, preferences, and nutritional gaps.</li>
+                                <li><strong>ML Prediction Engine:</strong> Calorie predictive logic using <strong>Scikit-Learn linear and polynomial regression</strong> to calibrate basal metabolic rates from water, activity, and weight trends.</li>
+                                <li><strong>Enterprise Database Architecture:</strong> Designed a relational schema containing seven modular relational tables: <code>UserProfile</code>, <code>FoodItem</code>, <code>ConsumptionLog</code>, <code>WeightRecord</code>, <code>WaterLog</code>, <code>DailyDietPlan</code>, <code>Transaction</code>.</li>
+                                <li><strong>Reporting Engine:</strong> Generated professional, downloadable PDF/Excel progress charts and summaries using ReportLab and OpenPyXL.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: AI-Based Crop Recommendation -->
+                    <div class="project-card glass">
+                        <div class="project-image-placeholder">
+                            <div class="project-illustration crop-illustration">
+                                <span class="illus-emoji">🌾</span>
+                                <div class="floating-circle c1"></div>
+                                <div class="floating-circle c2"></div>
+                                <div class="floating-circle c3"></div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Scikit-Learn</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">NumPy</span>
+                            </div>
+                            <h3>AI-Based Crop Recommendation System</h3>
+                            <p class="project-intro">An agricultural intelligence tool to assist farmers in deciding the most optimal crop based on chemical soil values and weather factors.</p>
+                            
+                            <ul class="project-highlights">
+                                <li><strong>ML Classifiers:</strong> Model training and validation on agricultural Kaggle datasets using Random Forest, Decision Tree, and K-Nearest Neighbors to find optimal performance thresholds.</li>
+                                <li><strong>Feature Engineering:</strong> Selected optimal soil properties (N, P, K ratios), soil temperature, and average humidity parameters to reduce computational overhead.</li>
+                                <li><strong>Interactive Deployment:</strong> Built custom evaluation loops to test simulated data against prototype parameters (replicated in the playground tab above).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Smart Waste Pickup Scheduling -->
+                    <div class="project-card glass">
+                        <div class="project-image-placeholder">
+                            <div class="project-illustration routing-illustration">
+                                <span class="illus-emoji">🚛</span>
+                                <div class="floating-circle c1"></div>
+                                <div class="floating-circle c2"></div>
+                                <div class="floating-circle c3"></div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">Django</span>
+                                <span class="tag">Algorithms</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Operations Research</span>
+                            </div>
+                            <h3>Smart Waste Pickup Scheduling System</h3>
+                            <p class="project-intro">An optimization system streamlining urban waste pickup paths, reducing municipal carbon emissions and vehicle runtime.</p>
+                            
+                            <ul class="project-highlights">
+                                <li><strong>Routing Optimization:</strong> Formulated shortest-path heuristic algorithms to solve dynamic TSP nodes matching daily trash volume parameters.</li>
+                                <li><strong>Database-driven Web Platform:</strong> Built interactive admin views tracking vehicle states, scheduled locations, and route queues dynamically in Django template frameworks.</li>
+                                <li><strong>Asset Savings:</strong> Algorithmic benchmarks reduced travel path lengths by a modeled 18% compared to naive priority queue traversal patterns.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic & OR Highlights -->
+        <section id="academic" class="academic-section scroll-fade">
+            <div class="container">
+                <h2 class="section-title">Academic & Algorithmic Highlights</h2>
+                <p class="section-subtitle">Exploring advanced computer science concepts and deep mathematical proofs.</p>
+                
+                <div class="academic-grid">
+                    <div class="academic-card glass">
+                        <div class="academic-badge">ML Foundations</div>
+                        <h3>Core Algorithms Implemented</h3>
+                        <p>Written from scratch or verified mathematically:</p>
+                        <ul class="academic-bullets">
+                            <li><strong>Naive Bayes Spam Classifier:</strong> Formulated and coded the joint probabilities, utilizing Laplace smoothing to prevent zero-probability errors on rare text vectors.</li>
+                            <li><strong>CNN Medical Classifier:</strong> Implemented convolutional filter matrices, pooling layer downsizings, and dense activation functions to detect anomalies in radiology scans.</li>
+                            <li><strong>Regression Pipelines:</strong> Derived coefficients for gradient descent optimizing Mean Squared Error.</li>
+                        </ul>
+                    </div>
+
+                    <div class="academic-card glass">
+                        <div class="academic-badge">Operations Research</div>
+                        <h3>Mathematical Optimizations</h3>
+                        <p>Solving complex logistics and graph theorems:</p>
+                        <ul class="academic-bullets">
+                            <li><strong>Disaster Response Allocations:</strong> Linear programming models assigning emergency supplies from surplus centers to dynamic demand regions, minimizing transit costs.</li>
+                            <li><strong>Traveling Salesman Proofs:</strong> Rigorous validation of Hamiltonian cycle optimal limits using sub-tour elimination inequalities and integer programming.</li>
+                            <li><strong>Operations Matrices:</strong> Solved complex simplex matrices, dualities, and network flow constraints.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section scroll-fade">
+            <div class="container">
+                <h2 class="section-title">Education History</h2>
+                
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 – Present</div>
+                        <div class="timeline-content glass">
+                            <h3>Master of Computer Applications (MCA)</h3>
+                            <h4>Marian College Kuttikkanam (Autonomous), MG University</h4>
+                            <p class="timeline-desc">A deep dive into computational frameworks, software engineering paradigms, and practical machine learning integrations.</p>
+                            <div class="coursework-tags">
+                                <span class="c-tag">Machine Learning</span>
+                                <span class="c-tag">Database Management Systems</span>
+                                <span class="c-tag">Operations Research</span>
+                                <span class="c-tag">Data Structures & Algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021 – 2024</div>
+                        <div class="timeline-content glass">
+                            <h3>Bachelor of Science in Mathematics</h3>
+                            <h4>MG University, Kerala, India</h4>
+                            <p class="timeline-desc">An intensive study of abstract algebras, multivariable calculus, statistics, linear transformations, and numerical algorithms. Formed the logical baseline of my coding career.</p>
+                            <div class="gpa-score"><strong>CGPA:</strong> 7.0 / 10.0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-fade">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss internship opportunities, projects, or algorithmic problems.</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-info-panel glass">
+                        <h3>Connect Information</h3>
+                        <p>Feel free to reach out to me directly through any of these networks. I am responsive to email and phone inquiries.</p>
+                        
+                        <div class="contact-details">
+                            <a href="mailto:albertcyriac04@gmail.com" class="detail-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-svg"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                <span>albertcyriac04@gmail.com</span>
+                            </a>
+                            
+                            <a href="tel:+919497529476" class="detail-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                <span>+91-9497529476</span>
+                            </a>
+                            
+                            <div class="detail-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-svg"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span>Kerala, India (Open to Remote / On-Site)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links-title">Find me on:</div>
+                        <div class="footer-socials">
+                            <a href="https://github.com/albertcyriac04-lgtm" target="_blank" rel="noopener noreferrer" class="btn btn-secondary flex-social">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                GitHub
+                            </a>
+                            <a href="https://linkedin.com/in/albert-cyriac" target="_blank" rel="noopener noreferrer" class="btn btn-secondary flex-social">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form glass" id="contact-form" action="mailto:albertcyriac04@gmail.com" method="get" enctype="text/plain">
+                        <h3>Send a Direct Email</h3>
+                        
+                        <div class="input-group">
+                            <input type="text" id="form-name" name="name" required placeholder=" ">
+                            <label for="form-name">Full Name</label>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="email" id="form-email" name="email" required placeholder=" ">
+                            <label for="form-email">Email Address</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" id="form-subject" name="subject" required placeholder=" ">
+                            <label for="form-subject">Subject</label>
+                        </div>
+                        
+                        <div class="input-group">
+                            <textarea id="form-message" name="body" required rows="5" placeholder=" "></textarea>
+                            <label for="form-message">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            Send Message
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" x2="11" y1="2" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Albert Cyriac. All rights reserved.</p>
+            <p class="footer-credit">Designed with mathematical precision & developer passion.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
