@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // -------------------------------------------------------------------------
     const typingText = document.getElementById('typing-text');
     const roles = [
+        "AI Engineering." 
         "Data Science Solutions.",
         "Machine Learning Models.",
         "Operations Research Proofs.",
