@@ -1215,6 +1215,14 @@ html[data-theme="light"] .moon-icon { display: block; }
 .routing-illustration .floating-circle.c1 { width: 40px; height: 40px; background: #06B6D4; top: 10px; left: -20px; }
 .routing-illustration .floating-circle.c2 { width: 50px; height: 50px; background: #06B6D4; bottom: -15px; right: -5px; }
 
+.rag-illustration { background-color: rgba(99, 102, 241, 0.1); border: 2px solid rgba(99, 102, 241, 0.2); }
+.rag-illustration .floating-circle.c1 { width: 50px; height: 50px; background: #6366F1; top: -10px; right: -10px; }
+.rag-illustration .floating-circle.c2 { width: 40px; height: 40px; background: #6366F1; bottom: -5px; left: -5px; }
+
+.trashport-illustration { background-color: rgba(245, 158, 11, 0.1); border: 2px solid rgba(245, 158, 11, 0.2); }
+.trashport-illustration .floating-circle.c1 { width: 45px; height: 45px; background: #F59E0B; top: -10px; left: -10px; }
+.trashport-illustration .floating-circle.c2 { width: 55px; height: 55px; background: #F59E0B; bottom: -10px; right: -5px; }
+
 .project-body {
     padding: 3rem;
 }
@@ -1277,6 +1285,99 @@ html[data-theme="light"] .moon-icon { display: block; }
     padding: 0.1rem 0.4rem;
     border-radius: 4px;
     color: var(--text-primary);
+}
+
+/* ML Web Apps Sub-Grid */
+.ml-apps-section {
+    margin-top: 5rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 4rem;
+}
+
+.ml-apps-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.ml-apps-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+}
+
+.ml-app-compact-card {
+    padding: 1.5rem;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.ml-app-compact-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-indigo);
+}
+
+.ml-app-compact-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.ml-app-compact-card p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    margin-bottom: auto;
+}
+
+.ml-app-link {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent-cyan);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    transition: color 0.2s ease;
+}
+
+.project-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+.ml-app-link:hover {
+    color: var(--accent-indigo);
+}
+
+/* Responsive updates for ML Apps sub-grid */
+@media (max-width: 1024px) {
+    .ml-apps-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ml-apps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .ml-apps-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Academic Highlights */

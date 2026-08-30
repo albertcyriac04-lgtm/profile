@@ -70,11 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // -------------------------------------------------------------------------
     const typingText = document.getElementById('typing-text');
     const roles = [
-        "AI Engineering." 
-        "Data Science Solutions.",
-        "Machine Learning Models.",
-        "Operations Research Proofs.",
-        "Full-Stack Web Applications."
+        "Machine Learning.",
+        "Generative AI.",
+        "RAG Pipelines.",
+        "Full-Stack Development.",
+        "Data Science."
     ];
     let roleIndex = 0;
     let charIndex = 0;
